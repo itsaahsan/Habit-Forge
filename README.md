@@ -1,7 +1,6 @@
 # Habit Forge
 
 Habit Forge is a full-stack habit tracking platform focused on consistency, analytics, and gamification.
-It is designed as a portfolio-quality project for Full-Stack Developer roles.
 
 ## Features
 
