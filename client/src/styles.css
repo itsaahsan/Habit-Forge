@@ -1,0 +1,263 @@
+:root {
+  --bg: #f6f1e8;
+  --card: #fffdf8;
+  --text: #16120d;
+  --muted: #6b5b4c;
+  --border: #ddccb8;
+  --accent: #0f766e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 10%, #ffd7ad 0, transparent 25%),
+    radial-gradient(circle at 90% 20%, #a8edea 0, transparent 20%),
+    var(--bg);
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+}
+
+.hero p {
+  color: var(--muted);
+  margin: 0.4rem 0 0;
+}
+
+.xpCard {
+  display: grid;
+  gap: 0.35rem;
+  background: #eefcf9;
+  border: 1px solid #b5e4dc;
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.habitForm {
+  display: grid;
+  gap: 0.7rem;
+}
+
+input,
+button,
+select {
+  font: inherit;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.7rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.habitList {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.habitItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
+.habitItem p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.actions {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 120px;
+}
+
+.danger {
+  background: #9f1239;
+}
+
+.panelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.linkBtn {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0f766e;
+  border: 1px solid #7dc8c0;
+  background: #ebfffc;
+  border-radius: 10px;
+  padding: 0.45rem 0.65rem;
+}
+
+.filterBar {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  color: var(--muted);
+}
+
+.heatmap {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.22rem;
+  margin-top: 0.75rem;
+}
+
+.col {
+  display: grid;
+  gap: 0.22rem;
+}
+
+.cell {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.lvl-0 {
+  background: #ece3d7;
+}
+
+.lvl-1 {
+  background: #8dd3c9;
+}
+
+.lvl-2 {
+  background: #2aa194;
+}
+
+.lvl-3 {
+  background: #0f5f59;
+}
+
+.badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.badges span {
+  background: #ffedd5;
+  border: 1px solid #fdba74;
+  border-radius: 999px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.88rem;
+}
+
+.activityList {
+  margin-top: 0.7rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.activityItem {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.activityItem span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.state {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #991b1b;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .habitItem {
+    flex-direction: column;
+  }
+
+  .filterBar {
+    grid-template-columns: 1fr;
+  }
+}
