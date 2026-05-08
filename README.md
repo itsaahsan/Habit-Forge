@@ -1,4 +1,4 @@
-# 🔥 Habit Forge
+# Habit Forge
 
 > A full-stack habit tracking platform built for consistency, analytics, and gamification — designed with production-grade architecture and real-world engineering practices.
 
@@ -23,11 +23,7 @@ Habit Forge is a full-stack productivity application that helps users build and 
 - Browser notification system for habit reminders
 - CSV export pipeline for data portability
 
----
 
-## 🚀 Live Demo
-
-> 🔗 [habit-forge.vercel.app](https://habit-forge.vercel.app) *(replace with your deployed link)*
 
 ---
 
@@ -213,15 +209,8 @@ Contributions are welcome. Please open an issue first to discuss what you would 
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
----
 
-## 👤 Author
 
-**Amimul Ahsan**
-AI Engineer & Full-Stack Developer
-
-[![GitHub](https://img.shields.io/badge/GitHub-itsaahsan-181717?style=flat&logo=github)](https://github.com/itsaahsan)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Amimul_Ahsan-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/itsaahsan)
 
 ---
 
